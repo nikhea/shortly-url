@@ -53,3 +53,7 @@ p {
 img {
   width: 100%;
 }
+
+.container {
+  @apply w-[90%] m-auto;
+}

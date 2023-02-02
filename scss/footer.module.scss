@@ -1,0 +1,32 @@
+.footerBg {
+  @apply bg-[#34313D] text-white py-20;
+}
+.logoImage {
+  //   @apply w-[80px];
+}
+.footer {
+  //   @apply flex flex-col items-center lg:items-start lg:grid grid-cols-3 justify-between gap-20;
+  @apply flex flex-col items-center lg:items-start lg:flex-row lg:justify-between lg:gap-20;
+}
+.footerLinks {
+  //   @apply text-center lg:text-start lg:grid grid-cols-3 gap-20;
+  @apply text-center lg:text-start lg:flex gap-20 justify-between;
+
+  .links {
+    h3 {
+      @apply font-bold text-lg my-5  lg:my-0;
+    }
+    ul {
+    }
+    .linkItem {
+      @apply my-5;
+    }
+  }
+}
+.social {
+  @apply flex gap-5;
+  .socialIcon {
+    @apply w-[30px] cursor-pointer;
+    fill: red;
+  }
+}
