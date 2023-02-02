@@ -1,0 +1,11 @@
+.bg {
+  @apply text-center text-white py-10  flex items-center justify-center min-h-[30vh] lg:min-h-[50vh];
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  //   min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    @apply font-bold capitalize m-5 p-0 text-xl lg:text-5xl;
+  }
+}

@@ -57,3 +57,6 @@ img {
 .container {
   @apply w-[90%] m-auto;
 }
+.btn-full {
+  @apply px-5 py-3 capitalize bg-black rounded-full;
+}
