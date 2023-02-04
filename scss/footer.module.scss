@@ -26,7 +26,7 @@
   }
 }
 .social {
-  @apply flex gap-5;
+  @apply flex gap-5 items-center;
   .socialIcon {
     @apply w-[30px] cursor-pointer;
     fill: red;

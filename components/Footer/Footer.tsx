@@ -1,9 +1,9 @@
 import style from "../../scss/footer.module.scss";
 import Image from "next/image";
-import faceBook from "../../public/images/icon-facebook.svg";
-import twitter from "../../public/images/icon-twitter.svg";
-import pinterest from "../../public/images/icon-pinterest.svg";
-import instagram from "../../public/images/icon-instagram.svg";
+import FaceBook from "../../icons/FaceBook";
+import Twitter from "../../icons/twitter";
+import Pinterest from "../../icons/Pinterest";
+import Instagram from "../../icons/instagram";
 import FooterLogo from "../../public/images/footer-logo.svg";
 const Footer = () => {
   return (
@@ -52,34 +52,10 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.social}>
-            <Image
-              className={style.socialIcon}
-              src={faceBook}
-              alt={faceBook.src}
-              height="100"
-              width="100"
-            />
-            <Image
-              className={style.socialIcon}
-              src={twitter}
-              alt={twitter.src}
-              height="100"
-              width="100"
-            />
-            <Image
-              className={style.socialIcon}
-              src={pinterest}
-              alt={pinterest.src}
-              height="100"
-              width="100"
-            />
-            <Image
-              className={style.socialIcon}
-              src={instagram}
-              alt={instagram.src}
-              height="100"
-              width="100"
-            />
+            <FaceBook className="cursor-pointer hover:fill-[#2acfcf]" />
+            <Twitter className="cursor-pointer hover:fill-[#2acfcf]" />
+            <Pinterest className="cursor-pointer hover:fill-[#2acfcf]" />
+            <Instagram className="cursor-pointer hover:fill-[#2acfcf]" />
           </div>
         </div>
       </div>
@@ -88,3 +64,36 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* <Image
+              className={style.socialIcon}
+              src={faceBook}
+              alt={faceBook.src}
+              height="100"
+              width="100"
+            /> */
+}
+{
+  /* <Image
+className={style.socialIcon}
+src={twitter}
+alt={twitter.src}
+height="100"
+width="100"
+/>
+<Image
+className={style.socialIcon}
+src={pinterest}
+alt={pinterest.src}
+height="100"
+width="100"
+/>
+<Image
+className={style.socialIcon}
+src={instagram}
+alt={instagram.src}
+height="100"
+width="100"
+/> */
+}
