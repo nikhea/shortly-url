@@ -58,5 +58,6 @@ img {
   @apply w-[90%] m-auto;
 }
 .btn-full {
-  @apply px-16 py-3 capitalize bg-black rounded-full;
+  @apply px-16 py-3 capitalize bg-black rounded-full hover:opacity-[0.7];
+  background-color: hsl(180, 66%, 49%);
 }

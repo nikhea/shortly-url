@@ -14,7 +14,7 @@ const Footer = () => {
             <Image
               className={style.logoImage}
               src={FooterLogo}
-              alt={FooterLogo}
+              alt={FooterLogo.src}
               height="100"
               width="100"
             />
@@ -55,28 +55,28 @@ const Footer = () => {
             <Image
               className={style.socialIcon}
               src={faceBook}
-              alt={faceBook}
+              alt={faceBook.src}
               height="100"
               width="100"
             />
             <Image
               className={style.socialIcon}
               src={twitter}
-              alt={twitter}
+              alt={twitter.src}
               height="100"
               width="100"
             />
             <Image
               className={style.socialIcon}
               src={pinterest}
-              alt={pinterest}
+              alt={pinterest.src}
               height="100"
               width="100"
             />
             <Image
               className={style.socialIcon}
               src={instagram}
-              alt={instagram}
+              alt={instagram.src}
               height="100"
               width="100"
             />

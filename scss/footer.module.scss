@@ -16,10 +16,12 @@
     h3 {
       @apply font-bold text-lg my-5  lg:my-0;
     }
-    ul {
-    }
     .linkItem {
-      @apply my-5;
+      @apply my-5 cursor-pointer;
+
+      &:hover {
+        color: hsl(180, 66%, 49%);
+      }
     }
   }
 }
