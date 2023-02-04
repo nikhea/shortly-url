@@ -1,4 +1,5 @@
 import { CardsDB, ICardsDB } from "../../data/cardsDB";
+import BrandIcon from "../../icons/BrandIcon";
 import style from "../../scss/features.module.scss";
 
 const Features = () => {
@@ -12,7 +13,7 @@ const Features = () => {
     </div>
   ));
   return (
-    <div>
+    <div className={style.BgFeatures}>
       <div className="container">
         <div className={style.features}>
           <h1> Advanced Statistics</h1>
@@ -22,8 +23,20 @@ const Features = () => {
           </p>
         </div>
         <div className={style.cards}>
-          <div className={style.line}></div>
           {Cards}
+          {/* <div className={style.card}>
+            <div className={style.icon}>
+              <span>
+                <BrandIcon />
+              </span>
+            </div>
+            <h1>Brand Recognition</h1>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div> */}
         </div>
       </div>
     </div>
