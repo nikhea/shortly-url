@@ -1,0 +1,39 @@
+.features {
+  @apply flex flex-col  text-center;
+  h1 {
+    @apply font-bold;
+  }
+}
+
+.cards {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5 gap-5 relative overflow-hidden items-center justify-center text-center place-items-center;
+  .line {
+    @apply bg-slate-800 w-2 h-[50%] absolute overflow-hidden flex items-center justify-center text-center place-items-center;
+    // transform: rotate(100deg);
+  }
+
+  .card {
+    @apply flex flex-col items-center lg:items-start  bg-white shadow-2xl py-5 px-5 my-10  rounded-lg;
+    h1 {
+      @apply text-3xl pt-5 mt-10;
+    }
+    p {
+      @apply text-center lg:text-start;
+    }
+    &:nth-child(3) {
+      @apply lg:mt-24;
+    }
+    &:nth-child(3) {
+      @apply lg:mt-32;
+    }
+  }
+}
+.icon {
+  background-color: hsl(257, 27%, 26%);
+  @apply flex rounded-full
+    h-[80px] w-[80px]
+    absolute -top-6 lg:left-7;
+  span {
+    @apply text-center flex justify-center items-center w-full h-full;
+  }
+}
