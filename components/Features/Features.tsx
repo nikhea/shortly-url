@@ -23,6 +23,7 @@ const Features = () => {
           </p>
         </div>
         <div className={style.cards}>
+          <div className={style.line} />
           {Cards}
           {/* <div className={style.card}>
             <div className={style.icon}>
