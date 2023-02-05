@@ -18,7 +18,7 @@
 
   .card {
     // py-10 lg:py-5 px-2 lg:px-5   mt-16 lg:mx-3 rounded-lg
-    @apply flex flex-col items-center lg:items-start  bg-white shadow-2xl py-10 lg:py-5 px-2 lg:px-5  mt-16  rounded-lg relative;
+    @apply flex flex-col items-center lg:items-start  bg-white shadow-2xl py-10 lg:py-5 px-2 lg:px-5  mt-16  rounded-lg relative w-[100%];
     h1 {
       @apply text-3xl pt-5 mt-10;
     }
