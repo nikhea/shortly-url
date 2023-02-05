@@ -6,21 +6,14 @@ const UrlsList = () => {
   const [copiedId, setCopiedId] = useState(-1);
   const Links = useLinkStore((state: { links: any }) => state.links);
   const handleCopy = (id: number) => {
-    const p = Links.find((link: LinkItems) => {
-      // if (link.id === id) {
-      //   navigator.clipboard.writeText(link.full_short_link);
-      //   setButtonText("copied!");
-      // }
-      // if (link.id !== id) {
-      //   setButtonText("copy");
-      // }
+    const copiedText = Links.find((link: LinkItems) => {
       navigator.clipboard.writeText(
         Links.find((link: LinkItems) => link.id === id)?.full_short_link
       );
       setCopiedId(id);
     });
 
-    return p;
+    return copiedText;
   };
   const showLink = Links.map((link: LinkItems) => (
     <div key={link.id} className={style.card}>
@@ -48,3 +41,11 @@ const UrlsList = () => {
 };
 
 export default UrlsList;
+
+// if (link.id === id) {
+//   navigator.clipboard.writeText(link.full_short_link);
+//   setButtonText("copied!");
+// }
+// if (link.id !== id) {
+//   setButtonText("copy");
+// }
