@@ -1,5 +1,7 @@
 import style from "../../scss/navBar.module.scss";
 import Logo from "../../public/images/logo.svg";
+import HumbergerOpen from "../../public/images/icon-hamburger.svg";
+import HumbergerClose from "../../public/images/icon-close.svg";
 import Image from "next/image";
 import { useState } from "react";
 const NavBar = () => {
@@ -59,8 +61,29 @@ const NavBar = () => {
           </>
         ) : null}
 
-        <div className="HumbergerContainer lg:hidden" onClick={toggleMenu}>
-          <div>{!isMenuOpen ? "open" : "closed"}</div>
+        <div
+          className="HumbergerContainer lg:hidden cursor-pointer"
+          onClick={toggleMenu}
+        >
+          {/* <div> */}
+          {!isMenuOpen ? (
+            <Image
+              // className={style.logoImage}
+              src={HumbergerOpen}
+              alt={HumbergerOpen.src}
+              height="100"
+              width="100"
+            />
+          ) : (
+            <Image
+              // className={style.logoImage}
+              src={HumbergerClose}
+              alt={HumbergerClose.src}
+              height="100"
+              width="100"
+            />
+          )}
+          {/* </div> */}
         </div>
       </div>
     </div>
