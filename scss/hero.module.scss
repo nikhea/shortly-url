@@ -1,5 +1,5 @@
 .hero {
-  @apply my-20 relative mb-36;
+  @apply my-20 relative lg:mb-36;
 }
 
 .flexHero {
@@ -23,7 +23,9 @@
 
 .imageContainer {
   //   @apply relative;
-  @apply lg:absolute  -right-52;
+  @apply lg:absolute  -right-20;
   img {
+    @apply block object-cover;
   }
 }
+// -right-52

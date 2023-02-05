@@ -1,5 +1,5 @@
 .features {
-  @apply flex flex-col  text-center;
+  @apply flex flex-col  text-center mt-20;
   h1 {
     @apply font-bold;
   }
@@ -9,7 +9,7 @@
   @apply bg-gray-100 py-20;
 }
 .cards {
-  @apply grid grid-cols-1  lg:grid-cols-3  gap-5 relative  items-center justify-center text-center place-items-center my-20;
+  @apply grid grid-cols-1  lg:grid-cols-3  gap-5 relative  items-center justify-center text-center place-items-center mb-20;
   .line {
     @apply bg-cyan-500 w-full h-2 absolute rotate-[270deg] lg:rotate-0;
     top: 55%;

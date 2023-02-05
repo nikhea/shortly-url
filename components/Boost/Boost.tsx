@@ -3,8 +3,6 @@ import Image from "next/image";
 import BoostDesktop from "../../public/images/bg-boost-desktop.svg";
 import BoostMobile from "../../public/images/bg-boost-mobile.svg";
 const Boost = () => {
-  console.log(BoostMobile);
-
   return (
     <div className={style.bg}>
       {/* <picture>
