@@ -2,7 +2,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage, devtools } from "zustand/middleware";
 
-interface LinkItems {
+export interface LinkItems {
   id: number;
   full_short_link: string;
   original_link: string;

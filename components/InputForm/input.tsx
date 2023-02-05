@@ -32,6 +32,7 @@ const input = () => {
       };
       addLink(links);
       seturlValue("");
+      // setErrors(false);
     }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {

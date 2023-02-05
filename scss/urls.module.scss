@@ -1,0 +1,15 @@
+.card {
+  @apply flex flex-col lg:flex-row lg:items-center justify-between  bg-white shadow-2xl py-5 px-3 lg:px-5  mt-5 rounded-lg;
+  .orginal {
+  }
+  .short {
+    @apply mb-3;
+    color: hsl(180, 66%, 49%);
+  }
+  hr {
+    @apply my-3 lg:hidden;
+  }
+  div {
+    @apply flex lg:gap-10 lg:items-center flex-col lg:flex-row;
+  }
+}
