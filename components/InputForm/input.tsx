@@ -1,30 +1,38 @@
 import style from "../../scss/InputForm.module.scss";
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import { useLinkStore } from "../../stores/useLinkStore";
 
 const input = () => {
   const [urlValue, seturlValue] = useState("");
   const [errors, setErrors] = useState(false);
   const [errorMsg, setErrorMsg] = useState("Please add a link");
+  const addLink = useLinkStore((state) => state.addLink);
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // if (urlValue === "" || urlValue === undefined) {
-    //   setErrors(true);
-    //   setErrorMsg("Please add a link");
-    //   return;
-    // }
-    // const response = await fetch(
-    //   `https://api.shrtco.de/v2/shorten?url=${urlValue}`
-    // );
-    // const data = await response.json();
-    // if (data.error) {
-    //   const msg = data.error;
-    //   setErrors(true);
-    //   setErrorMsg(msg);
-    // }
-    // if (data.result) {
-    //   console.log(data);
-    //   seturlValue("");
-    // }
+    if (urlValue === "" || urlValue === undefined) {
+      setErrors(true);
+      setErrorMsg("Please add a link");
+      return;
+    }
+    const response = await fetch(
+      `https://api.shrtco.de/v2/shorten?url=${urlValue}`
+    );
+    const data = await response.json();
+    if (data.error) {
+      const msg = data.error;
+      setErrors(true);
+      setErrorMsg(msg);
+    }
+    if (data.result) {
+      const links = {
+        id: uuidv4(),
+        full_short_link: data.result.full_short_link,
+        original_link: data.result.original_link,
+      };
+      addLink(links);
+      seturlValue("");
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     // setErrors(false);

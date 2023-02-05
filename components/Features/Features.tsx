@@ -1,6 +1,7 @@
 import { CardsDB, ICardsDB } from "../../data/cardsDB";
 import BrandIcon from "../../icons/BrandIcon";
 import style from "../../scss/features.module.scss";
+import UrlsList from "../urls/UrlsList";
 
 const Features = () => {
   const Cards = CardsDB.map((card, index) => (
@@ -14,6 +15,7 @@ const Features = () => {
   ));
   return (
     <div className={style.BgFeatures}>
+      <UrlsList />
       <div className="container">
         <div className={style.features}>
           <h1> Advanced Statistics</h1>
