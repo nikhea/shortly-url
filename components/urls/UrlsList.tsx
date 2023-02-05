@@ -29,8 +29,11 @@ const UrlsList = () => {
       <div>
         <p className={style.short}>{link.full_short_link}</p>
         <button
+          style={{
+            backgroundColor: link.id === copiedId ? "#3b3054" : "",
+          }}
           onClick={() => handleCopy(link.id)}
-          className="btn-half focus:bg-slate-800"
+          className="btn-half "
         >
           {link.id === copiedId ? "copied!" : "copy"}
         </button>
