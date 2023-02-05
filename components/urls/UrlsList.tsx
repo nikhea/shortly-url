@@ -24,7 +24,11 @@ const UrlsList = () => {
   };
   const showLink = Links.map((link: LinkItems) => (
     <div key={link.id} className={style.card}>
-      <p className={style.orginal}>{link.original_link}</p>
+      <p className={style.orginal}>
+        {link.original_link.length > 41
+          ? `${link.original_link.substring(0, 41)}...`
+          : `${link.original_link}`}
+      </p>
       <hr className={style.hr} />
       <div>
         <p className={style.short}>{link.full_short_link}</p>
