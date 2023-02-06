@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import style from "../../scss/urls.module.scss";
 import { useLinkStore, LinkItems } from "../../stores/useLinkStore";
@@ -24,7 +25,11 @@ const UrlsList = () => {
       </p>
       <hr className={style.hr} />
       <div>
-        <p className={style.short}>{link.full_short_link}</p>
+        <p className={style.short}>
+          <Link href={`${link.full_short_link}`} target="_blank">
+            {link.full_short_link}
+          </Link>
+        </p>
         <button
           style={{
             backgroundColor: link.id === copiedId ? "#3b3054" : "",

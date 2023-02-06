@@ -3,7 +3,7 @@
   .orginal {
   }
   .short {
-    @apply mb-3;
+    @apply mb-3 hover:underline;
     color: hsl(180, 66%, 49%);
   }
   hr {
