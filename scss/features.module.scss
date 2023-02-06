@@ -11,7 +11,7 @@
 .cards {
   @apply grid grid-cols-1  lg:grid-cols-3  gap-5 relative  items-center justify-center text-center place-items-center mb-20;
   .line {
-    @apply bg-cyan-500 w-full h-2 absolute rotate-[270deg] lg:rotate-0;
+    @apply bg-cyan-500 w-[180%] md:w-[130%] lg:w-full h-2 absolute rotate-[270deg] lg:rotate-0 overflow-hidden;
     top: 55%;
     // transform: rotate(270deg);
   }
