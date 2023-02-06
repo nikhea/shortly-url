@@ -44,7 +44,7 @@
     @apply max-w-[90%] m-auto;
   }
   ul {
-    @apply px-36 gap-6 capitalize font-bold  cursor-pointer;
+    @apply lg:px-36 gap-6 capitalize font-bold  cursor-pointer;
   }
   li {
     @apply py-5 cursor-pointer text-center;

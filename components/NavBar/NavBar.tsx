@@ -68,7 +68,6 @@ const NavBar = () => {
           {/* <div> */}
           {!isMenuOpen ? (
             <Image
-              // className={style.logoImage}
               src={HumbergerOpen}
               alt={HumbergerOpen.src}
               height="100"
@@ -76,7 +75,6 @@ const NavBar = () => {
             />
           ) : (
             <Image
-              // className={style.logoImage}
               src={HumbergerClose}
               alt={HumbergerClose.src}
               height="100"
